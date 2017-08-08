@@ -1,0 +1,38 @@
+ .login {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+       
+
+        .login h1 { color: #ffffff; text-align:center; }
+
+        input { 
+	            width: 100%; 
+	            margin-bottom: 20px; 
+	            padding: 20px;
+	            font-size: 13px;
+	            border-radius: 10px;
+        }
+
+        button{
+                background-color: #004d00;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                display: inline-block;
+                font-size: 20px;
+                border-radius: 12px;
+                box-shadow: 0 8px 20px 0 rgba(0,0,0,0.8), 0 10px 20px 0 rgba(0,0,0,0.40);
+                width: 115%;
+        }
+
+        body {
+            background: #76b852;
+            font-family: 'Open Sans', sans-serif;
+                /*font-style: italic;*/
+        }
