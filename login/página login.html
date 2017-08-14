@@ -19,10 +19,10 @@
                 <div class="account-wall">
                     <img class="profile-img" src="https://s-media-cache-ak0.pinimg.com/originals/6c/0c/94/6c0c94fe142b17df032f0ea4be88ef39.jpg"
                          alt="">
-                    <form class="form-signin">
-                        <input type="text" class="form-control" placeholder="Usuário ou Email" required autofocus>
-                        <input type="password" class="form-control" placeholder="Senha" required>
-                        <button class="btn btn-lg btn-primary btn-block" type="submit">
+                    <form class="form-signin" >
+                        <input type="text" id="email" class="form-control" placeholder="Usuário ou Email" >
+                        <input type="password" id="senha" class="form-control" placeholder="Senha" >
+                        <button class="btn btn-lg btn-primary btn-block" type="button" onclick="return enviar()">
                             Entre
                         </button>
                         <label class="checkbox pull-left">
@@ -31,14 +31,49 @@
                         </label>
                         <a href="#" class="pull-right need-help">Esqueci minha senha </a><span class="clearfix"></span>
                     </form>
-                </div>
+                   </div>
                 <a href="#" class="text-center new-account">Criar conta </a>
             </div>
+        
         </div>
     </div>
-        
-    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        function enviar() {
+        var email = document.getElementById("email").value;
+        var senha = document.getElementById("senha").value;
 
+            if (email == '' || senha == '') {
+            alert("Preencha todos os campos!");
+        }
+        else if (email == 'email@email' & senha == 'senha') {
+            alert("sim");
+        }
+        else {
+            alert("nao");
+        }
+        }
+    </script>
+    
+
+   <!-- <script src="Scripts/jquery-1.9.1.min.js">
+        <script language="JavaScript" type="text/javascript">
+        function envia() {
+            var time_debut = document.getElementById("email").value;
+            var time_fin = document.getElementById("senha").value;
+
+            if (time_debut == '' || time_fin == '') {
+                alert("Preencha todos os campos!");
+            }
+            else if (time_debut == 'email@mail' & time_fin == 'senha') {
+                alert("isso");
+            }
+            else {
+                document.getElementById("erro").submit();
+            }
+        }
+    </script>-->
+    
   
 </body>
 </html>
