@@ -8,6 +8,8 @@
     
     <link rel="stylesheet" href="Style.css" />
 
+    <script language="Javascript" src="validacaojs.js"></script>
+
 </head>
 
 <body>
@@ -38,41 +40,6 @@
         </div>
     </div>
     <script src="Scripts/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript">
-        function enviar() {
-        var email = document.getElementById("email").value;
-        var senha = document.getElementById("senha").value;
-
-            if (email == '' || senha == '') {
-            alert("Preencha todos os campos!");
-        }
-        else if (email == 'email@email' & senha == 'senha') {
-            alert("sim");
-        }
-        else {
-            alert("nao");
-        }
-        }
-    </script>
-    
-
-   <!-- <script src="Scripts/jquery-1.9.1.min.js">
-        <script language="JavaScript" type="text/javascript">
-        function envia() {
-            var time_debut = document.getElementById("email").value;
-            var time_fin = document.getElementById("senha").value;
-
-            if (time_debut == '' || time_fin == '') {
-                alert("Preencha todos os campos!");
-            }
-            else if (time_debut == 'email@mail' & time_fin == 'senha') {
-                alert("isso");
-            }
-            else {
-                document.getElementById("erro").submit();
-            }
-        }
-    </script>-->
     
   
 </body>
